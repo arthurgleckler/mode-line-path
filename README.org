@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2026 Arthur A. Gleckler
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+#+title: mode-line-path
+
+Display an abbreviated file path in the GNU Emacs mode line.  Shorten
+long paths using the values of short environment variable names (three
+characters or fewer) as prefixes.  If a path is still too long,
+truncate it with an ellipsis.
+
+For example, if =$e= is =/home/alice/.emacs.d=:
+
+: /home/alice/.emacs.d/lisp/init.el => $e/lisp
+
+[[file:mode-line-path.svg?v1]]
+
+* Installation
+
+Install from [[https://melpa.org/#/mode-line-path][MELPA]], then add =mode-line-path= to your mode line.
+For example:
+
+#+begin_src emacs-lisp
+(setq-default mode-line-buffer-identification
+              '("%b" " (" mode-line-path ")"))
+#+end_src
+
+* Customization
+
+- =mode-line-path-length-limit= :: Maximum length of the displayed
+  path (default 40).
+- =mode-line-path-variable-name-max-length= :: Maximum length of
+  environment variable names used for abbreviation (default 3).  Set
+  to =nil= for no limit.
+- =mode-line-path-env-variable-predicate= :: Optional predicate to
+  filter which environment variables are considered.
+
+* Testing
+
+#+begin_src shell
+  emacs \
+    --batch \
+    -l mode-line-path.el \
+    -l mode-line-path-tests.el \
+    -f ert-run-tests-batch-and-exit
+#+end_src
+
+#+RESULTS:
+
+* License
+
+GPL-3.0-or-later

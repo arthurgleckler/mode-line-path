@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="26" viewBox="0 0 720 26">
+  <rect width="720" height="26" fill="#bfbfbf"/>
+  <rect x="0" y="0" width="720" height="1" fill="#999"/>
+  <rect x="0" y="25" width="720" height="1" fill="#999"/>
+  <text x="6" y="18" font-family="monospace" font-size="14" fill="#000">-U:**-&#160;&#160;init.el ($e/lisp)&#160;&#160;&#160;&#160;&#160;&#160;(Emacs-Lisp)--L1--C0--Top---------------------------------------------------------</text>
+</svg>
