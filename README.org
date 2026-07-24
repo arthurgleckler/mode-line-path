@@ -14,6 +14,8 @@ For example, if =$e= is =/home/alice/.emacs.d=:
 
 [[file:mode-line-path.svg?v1]]
 
+Read more in [[https://speechcode.com/blog/mode-line-path][this blog post]].
+
 * Installation
 
 Install from [[https://melpa.org/#/mode-line-path][MELPA]], then add =mode-line-path= to your mode line.
